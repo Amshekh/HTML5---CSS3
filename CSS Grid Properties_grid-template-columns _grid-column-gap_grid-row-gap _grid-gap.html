@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> CSS Grid Properties grid-template-columns | grid-column-gap | grid-row-gap | grid-gap </title>
+	<style type="text/css">
+		.main {
+				width: 700px;
+				height: 600px;
+				border: 2px solid grey;
+				margin: auto;
+				padding: 10px;
+				display: grid;
+			/*	grid-template-columns: 150px 150px 150px 150px; /* how many columns of what size?  */
+				grid-template-columns: auto auto auto;  /* automatically makes three column grid, if you give more than three it will also make more than four column */
+			/*	grid-column-gap: 10px;  /* to give gap between columns */
+			/*	grid-row-gap: 10px; /* to give gap between rows */
+				grid-gap: 10px 10px;  /* shorthand to give row and column gap simultaneously */
+		}
+		.main div{
+				padding: 50px;
+				font-size: 50px;
+				background: aqua;
+				border: 1px solid brown;
+		}
+	</style>
+</head>
+<body>
+	<div class="main">
+		<div>1</div>
+		<div>2</div>
+		<div>3</div>
+		<div>4</div>
+		<div>5</div>
+		<div>6</div>
+		<div>7</div>
+		<div>8</div>
+		<div>9</div>
+	</div>
+</body>
+</html>

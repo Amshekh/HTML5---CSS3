@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> CSS Animation Linear | Ease | ease-in | ease-out | ease in-out </title>
+	<style type="text/css">
+		.box-container {
+						width: 700px;
+						height: 150px;
+						border: 2px solid grey;
+						margin: auto;
+						margin-top: 100px;
+						position: relative;
+		}
+		.box {
+			 width: 200px;
+			 height: 100px;
+			 background: brown;
+			 margin-top: 20px;
+			 animation: box 4s; /* If you want animation effect more than once, then pass animation:iteration count value 2,3 etc; */
+			 position: absolute;
+		/*	 animation-timing-function: linear;  /* Moves with same speed */
+		/*	 animation-timing-function: ease;   /* Gets fast in middle and slow in begining and end */
+		/*	 animation-timing-function: ease-in;  /* Starts slow but gets fast at end */
+		/*	 animation-timing-function: ease-out;  /* Starts fast but gets slower in the end */
+			 animation-timing-function: ease-in-out;
+		}
+		@keyframes box {
+						from {
+								left: 0px;
+						}
+						to {
+							left: 500px;
+						}
+		}
+	</style>
+</head>
+<body>
+	<div class="box-container">
+		<!-- <div class="box"> Linear </div>  -->
+		<!-- <div class="box"> Ease </div>  -->
+		<!-- <div class="box"> Ease-in </div>  -->
+		<!-- <div class="box"> Ease-out </div>  -->
+		<div class="box"> Ease-in-out </div>
+
+	</div>
+</body>
+</html>

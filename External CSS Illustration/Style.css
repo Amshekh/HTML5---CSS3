@@ -1,0 +1,13 @@
+.main{
+		width: 1000px;
+		height: 500px;
+		background: aqua;
+		font-size: 50px;
+		color: white;
+		text-align: center;
+		font: Calibri;
+} 
+.main:hover{
+	background: gold;
+	color: grey;
+}

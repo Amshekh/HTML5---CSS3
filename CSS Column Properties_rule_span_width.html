@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> CSS Column Properties_Rule | Span | Width </title>
+	<style type="text/css">
+		.main {
+				width: 1000px;
+				/* column-count: 3; */
+				column-gap: 25px;
+				column-rule: 5px solid grey; /* column-rule: 4px double grey | column-rule: 4px dotted grey | column-rule: 4px dash grey; */
+				column-width: 300px; /* When you give column-width then don't give column-count */
+		}
+		.h2{
+			column-span: all; /* content in h2 will now be treated as seperate row and then below contents will be shown in columns */
+			}
+	</style>
+</head>
+<body>
+	<div class="main">
+		<h2 class="h2"> Welcome to Amit's Tech Hub </h2>
+		Ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+	</div>
+</body>
+</html>

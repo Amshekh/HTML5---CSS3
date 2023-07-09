@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> CSS Grid Properties | column-start | column-end | row-start | row-end </title>
+	<style type="text/css">
+		.main {
+				width: 700px;
+				height: 600px;
+				border: 2px solid grey;
+				margin: auto;
+				padding: 10px;
+				display: grid;
+				grid-template-columns: auto auto auto;
+				grid-gap: 10px 10px;
+		}
+		.main div{
+					padding: 50px;
+					font-size: 50px;
+					background: aqua;
+					border: 2px solid brown;
+		}
+		#div1{
+			/*	grid-column-start: 1;
+				grid-column-end: 3;		*/ /*	it will combine column 1 and 2 and make it as column1 (double size) */
+
+				grid-row-start: 1;
+				grid-row-end: 4;	/* it will combine three rows and make it one  */
+		}
+	</style>
+</head>
+<body>
+	<div class="main">
+	 <div id="div1">1</div>
+	 <div>2</div>
+	 <div>3</div>
+	 <div>4</div>
+	 <div>5</div>
+	 <div>6</div>
+	 <div>7</div>
+	<!-- <div>8</div>
+	 	 <div>9</div>  -->
+</div>
+</body>
+</html>

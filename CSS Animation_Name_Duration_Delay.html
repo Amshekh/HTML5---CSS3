@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> CSS Animation Name | Duration | Delay </title>
+	<style type="text/css">
+		.box-container {
+						width: 600px;
+						height: 600px;
+						border: 2px solid grey;
+						margin: auto;
+						margin-top: 50px;
+						position: relative;
+		}
+		.box {
+			width: 200px;
+			height: 200px;
+			background-color: blue;
+			position: absolute;  /* Because box position is absolute, it will consider box-container as parent as its position is relative*/
+			top: 0px;
+			left: 0px;
+			animation-name: box;
+			animation-duration: 5s;
+		/*	animation-delay: 1s;  /* animation-delay will delay the animation by mentioned time */
+		/*	animation: box 1s;	/* Shorthand to pass animation-name and animation-duration at same time */
+		}
+		@keyframes box {
+						0% {
+							top: 0px;
+							left: 0px;
+							background-color: blue;
+						}
+						25% {						/* 10%  given then box animation becomes fast horizontally */
+							top: 0px;
+							left: 400px;
+							background-color: green;
+						}
+						50% {
+							top: 400px;
+							left: 400px;
+							background-color: red;
+						}
+						75% {						/* 10%  given then box animation becomes fast horizontally */
+							top: 400px;
+							left: 0px;
+							background-color: gold;
+						}
+						100% {
+								top: 0px;
+								left: 0px;
+								background-color: blue;
+						}
+		}
+	</style>
+</head>
+<body>
+	<div class="box-container">
+		<div class="box">
+		</div>
+	</div>
+</body>
+</html>

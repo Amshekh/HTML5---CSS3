@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> Media Query to make page responsive </title>
+	<style type="text/css">
+		.inner {
+				width: 1170 px;
+				margin: auto;
+				border: 1px solid aqua;
+		}
+		.col {
+				width: 23%;
+				margin: 1%; /* 23% width + 1% margin on both side = 25% | So we can have 4 items in screen width */
+				text-align: center;
+				background: lightyellow;
+				float: left;
+		}
+		.col img {
+					width: 100%;
+		}
+		.clear {
+				clear: both; /* Clearing the direction necessary because we have not given height to it's parent */
+		}
+
+
+	/*  Media query for Tablets  */
+	@media only screen and (min-width: 568px) and (max-width: 992px) {
+		.inner {
+				width: 100%;
+		}
+		.col {
+				width: 48%;
+				margin: 1%;
+		}
+	}	
+
+	/*  Media query for mobile devices */	
+	@media only screen and (min-width: 200px) and (max-width: 567px) {/* many mobile devices fall in this range */
+			.inner {    /* For mobile devices this inner class will be creating problem as width taken 1170px */
+					width: 100%;  /* So here we change the width to 100%  */ 
+			}
+			.col {
+				  width: 48%; /* Class properties mentioned here will override earlier declared class properties */
+				  margin: 1%;  /* We only want change in these 2 properties of class col, rest remain same */ 
+			}		
+		}
+	</style>
+</head>
+<body>
+	<div class="inner">
+		<div class="col">
+			<img src="Book_fon_by_AS.jpg"/>
+			<h3> Book </h3>
+		</div>
+		<div class="col">
+			<img src="Logo_ALPL.jpg"/>
+			<h3> Logo </h3>
+		</div>
+		<div class="col">
+			<img src="Logo_ATC.jpg"/>
+			<h3> Logo </h3>
+		</div>
+		<div class="col">
+			<img src="Logo_Timeria.jpg"/>
+			<h3> Logo </h3>
+		</div>
+		<div class="clear"></div>
+	</div>
+</body>
+</html>

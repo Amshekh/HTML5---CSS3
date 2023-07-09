@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS Position Relative</title>
+	<style type="text/css">
+		.col-1{
+				width: 200px;
+				height: 200px;
+				border: 2px solid grey;
+				font-size: 30px;
+				text-align: center;
+				background-color: aqua;
+				float: left;
+		}
+		.col-2{
+				width: 200px;
+				height: 200px;
+				border: 2px solid grey;
+				font-size: 30px;
+				text-align: center;
+				background-color: gold;
+				float: left;
+				position: relative;  /* When position is given relative the second column moves down from its initial position */  
+				top: 20px; /* top: 20px will bring it down to 20px from its initial position. Similarly bottom | left | right */
+		}
+		.col-3{
+				width: 200px;
+				height: 200px;
+				border: 2px solid grey;
+				font-size: 30px;
+				text-align: center;
+				background-color: hotpink;
+				float: left;				
+		}
+
+
+	</style>
+</head>
+<body>
+	<div class="col-1"> 
+		<h2> 1 </h2>
+	</div>
+	<div class="col-2">
+		<h2> 2 </h2>
+	</div>
+	<div class="col-3">
+		<h3> 3 </h3>
+	</div>
+</body>
+</html>
